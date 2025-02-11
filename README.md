@@ -1,36 +1,36 @@
 # CinemaProject
 
-# Склонируйте репозиторий:
+## Склонируйте репозиторий:
 
 ```
-https://github.com/SaniyaBekova/CinemaProject.git
+git clone https://github.com/SaniyaBekova/CinemaProject.git
 ```
 
-# Перейдите в папку с проектом
+## Перейдите в папку с проектом
 
 ```
 cd CinemaProject
 ```
 
-# Проверка изменении
+## Проверка изменении
 
 ```
 git status
 ```
 
-# Добавление изменений в индекс
+## Добавление изменений в индекс
 
 ```
 git add .
 ```
 
-# Создание коммита (git commit)
+## Создание коммита (git commit)
 
 ```
 git commit -m "Описание изменений"
 ```
 
-# Отправка изменений в удалённый репозиторий
+## Отправка изменений в удалённый репозиторий
 
 ```
 git push origin main
