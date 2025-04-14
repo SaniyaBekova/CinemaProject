@@ -9,6 +9,9 @@ def load_data():
     df = pd.read_excel("movie_schedule_with_salary.xlsx")
     df['price_adult'] = df['price_adult'].str.replace(r'[^\d]', '', regex=True).astype(int)
     df['minutes_needed'] = (df['price_adult'] / df['salary_per_hour']) * 60
+    df = df.dropna(subset=['price_adult', 'minutes_needed', 'salary_per_hour', 'movie'])
+    df = df[df['price_adult'] > 0]
+    df = df[df['salary_per_hour'] > 0]
     return df
 
 df = load_data()
